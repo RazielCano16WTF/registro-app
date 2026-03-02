@@ -21,7 +21,7 @@ Abre una terminal y ejecuta:
 ```bash
 cd backend
 # si tienes Maven instalado puedes usar:
-#   mvn spring-boot:run
+mvn spring-boot:run
 # pero no es obligatorio: el proyecto incluye un
 # "Maven wrapper" que descargará Maven automáticamente.
 # usa la variante apropiada para tu sistema operativo:
