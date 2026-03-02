@@ -12,6 +12,7 @@ Sistema completo de registro de usuarios con formulario web, API REST y persiste
 - **Node.js** 18+ y npm
 - **Java** 17+
 - **Maven** 3.9+
+  (no es necesario si se utiliza el *wrapper* incluido)
 
 ### 1. Ejecutar el Backend (Spring Boot)
 
@@ -19,7 +20,13 @@ Abre una terminal y ejecuta:
 
 ```bash
 cd backend
-mvn spring-boot:run
+# si tienes Maven instalado puedes usar:
+#   mvn spring-boot:run
+# pero no es obligatorio: el proyecto incluye un
+# "Maven wrapper" que descargará Maven automáticamente.
+# usa la variante apropiada para tu sistema operativo:
+./mvnw spring-boot:run      # Linux/macOS
+mvnw.cmd spring-boot:run    # Windows (PowerShell/Command Prompt)
 ```
 
 El servidor backend estará disponible en: **http://localhost:8080**

@@ -34,7 +34,7 @@ public class Registro {
     @Column(nullable = false, length = 1)
     private String sexo;
     
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "registro_hobbies", joinColumns = @JoinColumn(name = "registro_id"))
     @Column(name = "hobby")
     private List<String> hobbies;
